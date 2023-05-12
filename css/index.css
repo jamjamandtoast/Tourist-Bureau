@@ -4,24 +4,7 @@ body {
     background-color: #EDE0D4;
 }
 
-* { 
-    padding: 0%;
-    margin: 0;
-    box-sizing: border-box ;
-    position: relative;
-}
-.container {
-   width: 100%;
-   height: auto;
-}
+
 .container img { 
-    width: 100;
-}
-.container .text{
-    position: absolute;
-    color: white;
-    left: 100%;
-    top: 50%;
-    font-size: 100px;
-    transform: translate(-55%, -50%);
+    border-radius: 5%;
 }
