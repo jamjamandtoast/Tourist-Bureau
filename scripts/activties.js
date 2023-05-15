@@ -103,63 +103,6 @@ let activities = [
     }
 ];
 
-// Helper function to hide an element by ID
-function hideElement(id) {
-    document.getElementById(id).style.display = 'none';
-  }
-  
-  // Helper function to show an element by ID
-  function showElement(id) {
-    document.getElementById(id).style.display = 'block';
-  }
-  
-  // Helper function to display activity details
-  function displayActivityDetails(activity) {
-    document.getElementById('activity-name').textContent = activity.name;
-    document.getElementById('activity-description').textContent = activity.description;
-    document.getElementById('activity-location').textContent = activity.location;
-    document.getElementById('activity-price').textContent = activity.price > 0 ? '$' + activity.price.toFixed(2) : 'Free';
-    
-    if (activity.price > 0) {
-      // Show e-ticket form
-      showElement('eticket-form');
-    } else {
-      // Hide e-ticket form
-      hideElement('eticket-form');
-    }
-  }
-  
-  // Populate category dropdown
-  let categories = ['Adventures', 'Museums', 'Wine Tastings'];
-  let categoryDropdown = document.getElementById('category-dropdown');
-  categories.forEach(function(category) {
-    let option = document.createElement('option');
-    option.value = category;
-    option.textContent = category;
-    categoryDropdown.appendChild(option);
-  });
-  
-  /* // Populate activity names dropdown
-  let activities = [
-    {
-      category: 'Adventures', 
-      id: 'A101', 
-      name: 'Hot Air Balloon Ride', 
-      description: 'Enjoy a lovely hot air balloon ride over the valley at sunrise. Call 800-555-1212 to reserve a date/time after you complete your e-ticket purchase.', 
-      location: '121 S. Main Street',
-      price: 365.00 
-    },
-    {
-      category: 'Museums', 
-      id: 'M201', 
-      name: 'Art Museum', 
-      description: 'Explore the fascinating world of art at our museum.', 
-      location: '45 N. Elm Street',
-      price: 12.00 
-    },
-    {
-      category: 'Wine Tastings', 
-      id: 'W301', 
-      name: 'Wine Tasting Tour', 
-    }
-    ] */
+const catergorySelect = document.getElementById("catergorySelect");
+
+
